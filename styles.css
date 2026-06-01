@@ -962,9 +962,65 @@ margin-top: 5px;
   color: #000;
 
 }
-/* ===== أساس مهم يمنع الفراغ الأبيض ===== */
+
 * {
   box-sizing: border-box;
+}
+footer{
+  background-color: #232f3e;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-bottom: 37px;
+
+}
+
+.back-to-top{
+  width: 100%;
+  background-color: #37475a;
+  text-align: center;
+  padding: 15px;
+}
+
+.back-to-top a{
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+}
+.back-to-top a:hover{
+  color: #000000;
+  font-weight: bold;
+}
+
+.back-to-top:hover{
+  background-color: #485769;
+}
+
+.footer-nav{
+  margin-top: 35px;
+
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-nav a{
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-nav a:hover{
+  text-decoration: underline;
+}
+
+.copyright{
+  margin-top: 20px;
+  color: white;
+  font-size: 14px;
 }
 
 html,
@@ -973,6 +1029,7 @@ body {
   max-width: 100%;
   
 }
+
 @media (max-width: 1300px) {
   .main-section {
     display: grid;
@@ -1396,6 +1453,24 @@ body {
     white-space: normal;
     border-bottom: 1px solid #ddd;
   }
+ 
+
+  .footer-nav{
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .footer-nav a{
+    font-size: 13px;
+  }
+
+  .copyright{
+    font-size: 12px;
+    text-align: center;
+    padding: 0 10px;
+  }
+
 }
 
 @media (max-width: 450px) {
@@ -1506,4 +1581,17 @@ body {
     flex-shrink: 0;
     margin-left: 0;
   }
+
+  .back-to-top a{
+    font-size: 12px;
+  }
+
+  .footer-nav a{
+    font-size: 12px;
+  }
+
+  .copyright{
+    font-size: 11px;
+  }
+
 }
